@@ -1,0 +1,392 @@
+/* Configurar as fontes */
+@font-face{
+    font-family: 'OpenSans-Regular';
+    src: url(../fonts/OpenSans-Regular.ttf);
+    font-size: 1em;
+}
+@font-face{
+    font-family: 'OpenSans-Light';
+    src: url(../fonts/OpenSans-Light.ttf);
+    font-size: 1em;
+}
+
+/* CONFIGURAÇÕES GERAIS */
+body, html{
+    overflow-x: hidden;
+}
+
+/* Parte do header */
+header{
+    width: 100%;
+    height: 150px;
+    background: rgba(94, 41, 154, .8);
+    position: relative;
+    z-index: 2;
+}
+header .container{
+    position: relative;
+}
+
+/* Parte de cima, dos times e background preto */
+header .header-black{
+    background: #000;
+    height: 40px;
+}
+header .header-black li{
+    background-image: url("../img/clubs.png");
+    background-repeat: no-repeat;
+    display: inline-block;
+    margin: 4px 8px;
+}
+header .header-black li.club-01{
+    background-position: 0px;
+}
+header .header-black li.club-02{
+    background-position: -48px;
+}
+header .header-black li.club-03{
+    background-position: -96px;
+}
+header .header-black li.club-04{
+    background-position: -138px;
+}
+header .header-black li.club-05{
+    background-position: -192px;
+}
+header .header-black li.club-06{
+    background-position: -240px;
+}
+header .header-black li.club-07{
+    background-position: -288px;
+}
+header .header-black li.club-08{
+    background-position: -336px;
+}
+header .header-black li.club-09{
+    background-position: -378px;
+}
+header .header-black li.club-10{
+    background-position: -432px;
+}
+header .header-black li.club-11{
+    background-position: -480px;
+}
+header .header-black li.club-12{
+    background-position: -528px;
+}
+header .header-black li.club-13{
+    background-position: -580px;
+}
+header .header-black li.club-14{
+    background-position: -629px;
+}
+header .header-black li.club-15{
+    background-position: -672px;
+}
+header .header-black li a{
+    height: 32px;
+    width: 32px;
+    display: block;
+}
+
+/* Logo */
+header #logotipo{
+    position: absolute;
+    top: -30px;
+}
+
+/* Parte do menu*/
+#menu{
+    list-style-type: none;
+    float: right;
+    margin: 15px 0;
+}
+#menu div.input-group{
+    float: right;
+}
+#menu div{
+    width: 150px;
+}
+#menu li {
+    display: inline;
+}
+#menu li div.input-group{
+    margin-left: 30px;
+}
+#menu div.input-group input{
+    background: #441e70;
+    color: #fff;
+    border: none;
+    height: 30px;
+    line-height: 30px;
+    padding: 10px 10px;
+}
+#menu div.input-group button{
+    background: #441e70;
+    border: none;
+    height: 30px;
+    width: 15px;
+}
+#menu div.input-group button i{
+    color: rgb(199, 188, 188);
+    font-size: 14px;
+    position: absolute;
+    left: 4px;
+    top: 9px;
+}
+#menu div.input-group::-webkit-input-placeholder{
+    color: rgb(199, 188, 188);
+}
+#menu li a{
+    color: #fff;
+    font-size: 16px;
+    padding: 10px 25px;
+    text-decoration: none;
+}
+
+/* Parte do banner */
+#banner{
+    width: 100%;
+    height: 728px;
+    position: relative;
+    background: url(../img/banner.jpg) no-repeat;
+    background-size: cover;
+    top: -110px;
+    background-position: 0 -115px;
+}
+#banner h1{
+    color: #fff;
+    position: relative;
+    top: 300px;
+    font-size: 92px;
+    text-shadow: 2px 2px 2px rgba(0,0,0,.45);
+    font-family: 'OpenSans-Light';
+}
+#banner h1 small{
+    font-size: 32px;
+    display: block;
+    font-family: 'OpenSans-Regular';
+    font-weight: bold;
+}
+
+/* Parte das noticias */
+#news{
+    position: relative;
+    top: -90px;
+}
+#news h2{
+    color: #5e2799;
+    font-family: 'OpenSans-Light';
+    font-size: 48px;
+    text-transform: uppercase;
+    text-align: center;
+}
+#news hr{
+    border: #fde192 solid 3px; 
+    background-color: #fde192;
+    width: 200px;
+    margin: 0 auto;
+}
+#news .thumbnails{
+    margin-top: 35px;
+}
+#news .thumbnails h3{
+    color:#5e299a;
+    font-size: 18px;
+    font-family: 'OpenSans-Regular';
+    font-weight: bold;
+    margin-top: 10px;
+}
+#news .thumbnails time{
+    color:#a7a7a7;
+    font-size: 18px;
+    font-family: 'OpenSans-Regular';
+}
+
+/* Parte das estatisticas */
+#estatisticas{
+    background-color: #5e299a;
+    width: 100%;
+    height: 200px;
+    text-align: center;
+}
+#estatisticas p{
+    color: #fde092;
+    text-transform: uppercase;
+    font-family: 'OpenSans-Regular';
+    font-size: 64px;
+    margin-top: 28px;
+}
+#estatisticas p small{
+    color: #fff;
+    font-size: 24px;
+    display: block;
+}
+
+/* CTA */
+#cta{
+    position: relative;
+    top: 50px;
+}
+#cta h2{
+    color: #5e2799;
+    font-family: 'OpenSans-Light';
+    font-size: 48px;
+    text-transform: uppercase;
+    text-align: center;
+}
+#cta hr{
+    border: #fde192 solid 3px;
+    background-color: #fde192;
+    width: 200px;
+    margin: 0 auto;
+}
+#cta p{
+    margin: 60px 0 40px 0;
+    text-align: center;
+}
+#cta .btn-shop{
+    color: #fff;
+    background-color: #5e2799;
+    border-color: #5e2799;
+    min-width: 130px;
+    float: right;
+}
+#cta .btn-shop:hover{
+    color: #fff;
+    background-color: #501c86;
+    border-color: #501c86;
+    min-width: 130px;
+    float: right;
+    transition: 1s;
+}
+#cta .btn-register{
+    color: #000;
+    background-color: #fde192;
+    border-color: #fde192;
+    min-width: 130px;
+    float: left;
+}
+#cta .btn-register:hover{
+    color: #000;
+    background-color: #d4b253;
+    border-color: #d4b253;
+    min-width: 130px;
+    float: left;
+    transition: 1s;
+}
+#cta .btn-cta{
+    margin: 0 auto;
+}
+
+/* FOOTER */
+footer{
+    margin-top: 100px;
+}
+footer .row-cinza-claro{
+    height: 200px;
+    background-color: #171f26;
+}
+footer .row-cinza-escuro{
+    border-top: 2px solid #242d37;
+    height: 60px;
+    background-color: #11171d;
+}
+footer p{
+    display: inline;
+    margin: 0 7%;
+    line-height: 58px;
+}
+footer .row-cinza-escuro .esquerdo{
+    float: left;
+    font-family: 'OpenSans-Regular';
+    font-size: 14px;
+    color: white;
+}
+footer .row-cinza-escuro .direito{
+    float: right;
+    font-family: 'OpenSans-Regular';
+    font-size: 14px;
+    color: white;
+}
+footer a{
+    text-decoration: none;
+    color: #5e2799;
+}
+footer a:hover{
+    text-decoration: none;
+    color: #501c86;
+}
+.espacamento{
+    margin: 0 7%;
+    height: 198px;
+}
+.logotipo{
+    text-align: center;
+    margin-top: 25px;
+}
+footer .col-popular-post,
+footer .col-links,
+footer .col-get-in-touch{
+    margin-top: 40px;
+}
+footer .row-cols{
+    font-family: 'OpenSans-Regular';
+}
+footer .row-cols h4{
+    font-size: 16px;
+    color: white;
+    padding-bottom: 17px;
+    border-bottom: 1px solid #242d37;
+    text-transform: uppercase;
+}
+footer .row-cols h5{
+    color: #666;
+    font-size: 14px;
+    margin-bottom: -6px;
+}
+footer .row-cols time{
+    color: #fde092;
+    font-size: 12px;
+}
+footer .row-cols ul{
+    list-style: none;
+}
+footer .row-cols ul li{
+    margin-bottom: 15px;
+}
+footer .row-cols ul li i{
+    color: white;
+    margin-right: 7px;
+}
+footer .col-links a{
+    color: white;
+}
+footer .col-links a:hover{
+    color: #501c86;
+}
+footer .col-get-in-touch ul li i,
+footer .col-get-in-touch ul li a{
+    color: white;
+}
+footer .col-get-in-touch ul li a:hover{
+    color:rgba(94, 41, 154, .8);
+}
+footer .sociais{
+    display: inline;
+}
+footer .sociais i{
+    font-size: 20px;
+}
+.fa-whatsapp:hover{
+    color: #075E54;
+}
+.fa-instagram:hover{
+    color: #8a3ab9;
+}
+.fa-facebook:hover{
+    color: #3b5998;
+}
+.fa-envelope:hover{
+    color: #db4a39;
+}
