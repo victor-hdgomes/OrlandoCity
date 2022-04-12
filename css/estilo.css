@@ -399,3 +399,7 @@ footer .sociais i{
 .fa-envelope:hover{
     color: #db4a39;
 }
+
+video{
+    padding-top: 30px;
+}
